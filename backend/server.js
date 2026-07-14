@@ -158,9 +158,8 @@ app.get("/logs", async (req, res) => {
 });
 
 app.get("/", (req, res) => {
-    res.send("Honeypot Backend Running Successfully 🚀");
+    res.sendFile(path.join(__dirname, "../frontend/index.html"));
 });
-
 // ================= START SERVER =================
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
