@@ -1,5 +1,4 @@
-const API = "http://localhost:5000";
-
+const API = "https://honeypot-system-for-attack-analysis.onrender.com";
 
 // ================= REGISTER =================
 async function register() {
