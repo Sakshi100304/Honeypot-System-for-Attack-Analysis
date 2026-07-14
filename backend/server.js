@@ -8,10 +8,9 @@ app.use(express.json());
 app.use(cors());
 
 // ================= PORT =================
-const PORT = 5000;
-
+const PORT = process.env.PORT || 5000;
 // ================= DB =================
-mongoose.connect("mongodb://127.0.0.1:27017/honeypot")
+mongoose.connect(process.env.mongodb+srv://samrutwarsakshi8_db_user:<db_password>@cluster0.fixexhh.mongodb.net/?appName=Cluster0)
 .then(() => console.log("MongoDB Connected"))
 .catch(err => console.log(err));
 
