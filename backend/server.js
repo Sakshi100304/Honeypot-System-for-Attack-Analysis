@@ -10,7 +10,7 @@ app.use(cors());
 // ================= PORT =================
 const PORT = process.env.PORT || 5000;
 // ================= DB =================
-mongoose.connect(process.env.mongodb+srv://samrutwarsakshi8_db_user:<db_password>@cluster0.fixexhh.mongodb.net/?appName=Cluster0)
+mongoose.connect(process.env.MONGO_URI)
 .then(() => console.log("MongoDB Connected"))
 .catch(err => console.log(err));
 
